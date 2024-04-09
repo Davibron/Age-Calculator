@@ -28,7 +28,7 @@ main {
 .date-input {
   display: flex;
   flex-direction: row;
-  width: 45vw;
+  width: 17rem;
 
 }
 
@@ -83,11 +83,11 @@ hr {
 
 button {
   position: relative;
-  bottom: 1.6rem;
+  bottom: 1.5rem;
   border-radius: 50px;
   border: none;
-  width: 3.3rem;
-  height: 3rem;
+  width: 3rem;
+  height: 2.7rem;
   background-color: hsl(259, 100%, 65%);
   cursor: pointer;
 }
@@ -121,4 +121,20 @@ span {
   color: hsl(0, 100%, 67%);
   height: 0rem;
   font-size: .5rem;
+}
+
+@media (max-width: 580px) {
+  main {
+    height: 60vh;
+    width: 20rem;
+  }
+
+  .date-input {
+    margin-bottom: 10px;
+  }
+
+  .date-output {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
 }
